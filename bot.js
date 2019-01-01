@@ -326,6 +326,15 @@ Dat = currentTime.getDate()
 });
 
 
+
+
+
+
+
+
+
+client.on('error', console.error);
+ 
 client.on('messageDelete', message => {
     if(message.author.bot) return;
     if(message.channel.type === 'dm') return;
@@ -922,6 +931,11 @@ client.on('voiceStateUpdate', (voiceOld, voiceNew) => {
         logChannel.send(voiceLeave);
     }
 });
+
+
+
+
+
 
 
 
